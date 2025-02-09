@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-09 19:06:40.766622",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "librarian_details_section",
+  "librarian_name",
+  "mobile_no",
+  "column_break_beoo",
+  "rank",
+  "marital_status",
+  "associated_library_section",
+  "library"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "librarian_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Librarian Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "rank",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rank",
+   "options": "\nLibrary Assistant / Clerk\nLibrary Technician\nLibrarian\nSenior Librarian\nSubject Specialist Librarian\nHead Librarian / Library Director\nArchivist\nDigital Librarian\nReference Librarian",
+   "reqd": 1,
+   "sort_options": 1
+  },
+  {
+   "fieldname": "column_break_beoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nMarried\nUnmarried",
+   "sort_options": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "librarian_details_section",
+   "fieldtype": "Section Break",
+   "label": "Librarian Details"
+  },
+  {
+   "fieldname": "associated_library_section",
+   "fieldtype": "Section Break",
+   "label": "Associated Library"
+  },
+  {
+   "fieldname": "library",
+   "fieldtype": "Link",
+   "label": "Library",
+   "options": "Library"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-09 19:10:11.683033",
+ "modified_by": "Administrator",
+ "module": "Library",
+ "name": "Librarian",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
